@@ -1,4 +1,23 @@
-# bestPattern
+#bestPattern
+I was asked to complete this python programming assignment as a technical assessment for a start up. The data structure I used to solve the problem was a nested dictionary tree. If the paths given to me were a,b,c|a,b,d|b,d,c then the resulting dictionary tree would look like this:
+```
+   {
+      'a': {
+         'b: {
+            'c': {
+            },
+            'd': {
+            }
+         }
+      },
+      'b': {
+         'd': {
+            'c': {
+            }
+         }
+      }
+   }
+```
 
 #Problem Description
 You've been given two lists: the first is a list of patterns, the second is a list of slash-separated paths. Your job is to print, for each path, the pattern which best matches that path. ("Best" is defined more rigorously below, under "Output Format".)
